@@ -8,6 +8,7 @@ env:
   PP_ENV_URL: https://org6d1b2125.crm.dynamics.com
   PP_CLIENT_ID: 839f4ef5-623e-434d-add1-25849fd54c02
   PP_TENANT_ID: fba980db-2369-4792-bceb-8b5212a2223a
+  PP_GH_ACTIONS_SECRET: -N~A3E2-9_VarvefV_I-sD13jn_kArP66-
   PP_SOLUTION_NAME: TMobile
   PP_SOLUTION_OUTPUT_FILE: out/exported/TMobile.zip
   PP_SOLUTION_FOLDER: out/solutions/TMobile
@@ -30,7 +31,7 @@ jobs:
       with:
         environment-url: ${{ env.PP_ENV_URL }}
         app-id: ${{ env.PP_CLIENT_ID }}
-        client-secret: ${{ secrets.PP_GH_ACTIONS_SECRET }}
+        client-secret: ${{ env.PP_GH_ACTIONS_SECRET }}
         tenant-id: ${{ env.PP_TENANT_ID }}
         
 
