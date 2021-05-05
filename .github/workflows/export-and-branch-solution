@@ -2,7 +2,10 @@ name: export-and-branch-solution
 # Export solution from DEV environment
 #  unpack it and prepare, commit and push a git branch with the changes
 on:
-  workflow_dispatch:
+  #workflow_dispatch:
+  push:
+    branches:
+      main
   
 env:
     PP_ENV_URL: https://org6d1b2125.crm.dynamics.com
