@@ -1,20 +1,17 @@
 name: export-and-branch-solution
-# Export solution from DEV environment
+#  Export solution from DEV environment
 #  unpack it and prepare, commit and push a git branch with the changes
 on:
-  # workflow_dispatch:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
   
 env:
-    PP_ENV_URL: https://org6d1b2125.crm.dynamics.com
-    PP_CLIENT_ID: 839f4ef5-623e-434d-add1-25849fd54c02
-    PP_TENANT_ID: fba980db-2369-4792-bceb-8b5212a2223a
-    PP_SOLUTION_NAME: TMobile
-    PP_SOLUTION_OUTPUT_FILE: out/exported/TMobile.zip
-    PP_SOLUTION_FOLDER: out/solutions/TMobile
-    PP_SOLUTION_TARGET_FOLDER: solutions/TMobile
+  PP_ENV_URL: https://org6d1b2125.crm.dynamics.com
+  PP_CLIENT_ID: 839f4ef5-623e-434d-add1-25849fd54c02
+  PP_TENANT_ID: fba980db-2369-4792-bceb-8b5212a2223a
+  PP_SOLUTION_NAME: TMobile
+  PP_SOLUTION_OUTPUT_FILE: out/exported/TMobile.zip
+  PP_SOLUTION_FOLDER: out/solutions/TMobile
+  PP_SOLUTION_TARGET_FOLDER: solutions/TMobile
     
 
 jobs:
